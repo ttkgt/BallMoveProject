@@ -92,11 +92,14 @@ def game_loop():
 # マウスイベントの処理
 def motion(e): # マウスポインタの移動
     bar["x"] = e.x
+
 def click(e): # クリックでリスタート
     if is_gameover: init_game()
+
 # マウスイベントを登録
 win.bind('<Motion>', motion)
 win.bind('<Button-1>', click)
+
 # ゲームのメイン処理
 init_game()
 game_loop()
