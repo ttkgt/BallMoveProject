@@ -1,4 +1,5 @@
 # ブロック崩し
+# nsyt-86064-1で修正してみた
 from tkinter import *
 import random
 
